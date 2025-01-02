@@ -1,5 +1,6 @@
 import { Config } from '@stencil/core';
 import { angularOutputTarget } from '@stencil/angular-output-target';
+import { reactOutputTarget } from '@stencil/react-output-target';
 
 export const config: Config = {
   namespace: 'stencil-library',
@@ -26,6 +27,10 @@ export const config: Config = {
       directivesProxyFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/components.ts',
       directivesArrayFile: '../angular-workspace/projects/component-library/src/lib/stencil-generated/index.ts',
     }),
+    reactOutputTarget({
+      stencilPackageName: 'stencil-library',
+      outDir: '../react-library/lib/components/stencil-generated/',
+    })
   ],
   testing: {
     browserHeadless: "new",

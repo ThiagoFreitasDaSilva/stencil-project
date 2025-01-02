@@ -1,0 +1,40 @@
+{
+  "name": "react-library",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Thiago Freitas da Silva <thiago.silva198@fatec.sp.gov.br>",
+  "homepage": "https://github.com/ThiagoFreitasDaSilva/stencil-project#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoFreitasDaSilva/stencil-project.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "npm run tsc",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "bugs": {
+    "url": "https://github.com/ThiagoFreitasDaSilva/stencil-project/issues"
+  },
+  "dependencies": {
+    "@stencil/react-output-target": "^0.8.1",
+    "stencil-library": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}

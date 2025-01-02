@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "declaration": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "target": "es6",
+    "sourceMap": true,
+    "lib": ["es6"],
+    "paths": {
+      "stencil-library/dist/components/*": ["./packages/stencil-library/dist/components/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/*.spec.ts", "**/__tests__/**"]
+}
